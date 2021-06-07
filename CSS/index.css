@@ -294,6 +294,12 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 971px) {
+    .worky-content h2 {
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 752px) {
     .Hero-Img {
         position: relative;
