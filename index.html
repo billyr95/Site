@@ -13,6 +13,416 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 </head>
 <body>
+  <style></style>
+  h1 {
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: 0.2em;
+}
+/*Hero Section*/
+.Hero-grid {
+    top: -42rem;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    height: 0px;
+}
+.Hero-Content {
+    display: grid;
+    position: relative;
+    top: 20%;
+    right: 10%;
+}
+
+.Hero-Img {
+    display: grid;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 600px;
+    height: 400px;
+}
+/*Video Background*/
+.video-background {
+    position: relative;
+    width: 100%;
+}
+      
+#bgvid {
+    width: 100%;
+}
+
+/*Work Section*/
+.righty {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.lefty {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.worky-content {
+    display: grid;
+    grid-template-rows: 30% 25% 30%;
+    align-items: center;
+    padding: 2em;
+    align-content: center;
+}
+.worky-content p {
+    color: #f1f1f1
+}
+.work-link a{
+    text-decoration: none;
+    color: #1f1f1f;
+    font-family: "Monument Extended";
+    background: white;
+    padding: 1em;
+    border-radius: 50px;
+}
+
+/*About Section*/
+.about-container {
+    background: #f1f1f1;
+}
+/*Skill Bars*/
+.skill-center {
+    display: grid;
+    justify-items: center;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+}
+
+.skillbar-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 30px 0px;
+}
+
+.skillbar-container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.skillbar-skill {
+    display: grid;
+}
+
+.skillbar-grid h3 {
+    position: relative;
+}
+
+.skill-logo svg {
+    width: 80%;
+    height: 100%;
+}
+
+.skill-logo {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+}
+
+.skillbar {
+    display: grid;
+    align-items: center;
+    position: relative;
+    bottom: 13%;    
+}
+
+.skillbar-content {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    align-items: center;
+    width: 86%;
+    position: relative;
+    top: 25%;
+    left: 2%;
+}
+
+.skillbar-content h3{
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+.skillbar-content p {
+    text-align: center;
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+.skillbar-content span {
+    text-align: right;
+    color: #161616;
+    font-size: 20px;
+}
+
+.skillbar-bar {
+    background: rgba( 255, 255, 255, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-radius: 100px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 2em;
+    width: 90%;
+    display: grid;
+    align-items: center;
+}
+
+.skillbar-inner {
+    height: 1.7em;
+    border-radius: 100px;
+    position: relative;
+    left: 0.5%;
+}
+
+.HTMLCSS {
+    width: 90%;
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to right, #1CB5E0, #000046);
+}
+
+.JavaScript {
+    width: 80%;
+    background: #CAC531;
+    background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);
+    background: linear-gradient(to right, #F3F9A7, #CAC531);
+}
+
+.Wordpress {
+    width: 90%;
+    background: #21759b;
+    background: -webkit-linear-gradient(to right, #2fb1ed, #21759b);
+    background: linear-gradient(to right, #2fb1ed, #21759b);
+}
+
+.XD {
+    width: 90%;
+    background: #ff2bc2;
+    background: -webkit-linear-gradient(to right, #f87bd5, #ff2bc2);
+    background: linear-gradient(to right, #f87bd5, #ff2bc2);
+}
+
+.AfterEffects {
+    width: 85%;
+    background: #D8A1E0;
+    background: -webkit-linear-gradient(to right, #f9cfff, #D8A1E0);
+    background: linear-gradient(to right, #f9cfff, #D8A1E0);
+}
+
+.Illustrator {
+    width: 90%;
+    background: #FF7F27;
+    background: -webkit-linear-gradient(to right, #ffa66b, #FF7F27);
+    background: linear-gradient(to right, #ffa66b, #FF7F27);
+}
+
+.Premiere {
+    width: 95%;
+    background: #E579FF;
+    background: -webkit-linear-gradient(to right, #f1b8ff, #E579FF);
+    background: linear-gradient(to right, #f1b8ff, #E579FF)
+}
+
+.FourD {
+    width: 60%;
+    background: #2d39a1;
+    background: -webkit-linear-gradient(to right, #6472eb, #2d39a1);
+    background: linear-gradient(to right, #6472eb, #2d39a1)
+}
+
+.React {
+    width: 40%;
+    background: #61dafb;
+    background: -webkit-linear-gradient(to right, #b9f0ff, #61dafb);
+    background: linear-gradient(to right, #b9f0ff, #61dafb);
+}
+
+.Processing {
+    width: 50%;
+    background: #052642;
+    background: -webkit-linear-gradient(to right, #105796 , #052642);
+    background: linear-gradient(to right, #105796 , #052642);
+}
+
+@media only screen and (max-width: 10000px) {
+    .Mobile-Video {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 1477px) {
+    .skillbar-content {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (max-width: 1258px) {
+    .Hero-grid {
+        top: -36rem;
+    }
+}
+
+@media only screen and (max-width: 1212px) {
+    .worky-content {
+        padding: 2em 2em 0em 2em;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    .worky-content h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1108px) {
+    .Hero-Content h1 {
+        font-size: 60px;
+    }
+
+    .Hero-Content span {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+.Hero-grid {
+    top: -33rem;
+    }
+}
+
+@media only screen and (max-width: 1027px) {
+    .skill-container {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .Hero-Content {
+        top: 120%;
+        right: 0%;
+    }
+}
+
+@media only screen and (max-width: 971px) {
+    .worky-content h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 841px) {
+    .worky-content h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .worky-content {
+        padding: 2em 2em 0em 2em;
+    }
+    .worky-content h2 {
+        font-size: 24px;
+    }
+    .work-link a {
+        padding: 0.5em;
+        font-size: 12px;
+    }
+    body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
+        width: 60% !important;
+        height: 40% !important;
+    }  
+}
+
+@media only screen and (max-width: 758px) {
+    .righty, .lefty {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 69% 31%;
+    }
+    .worky-content {
+        grid-row-start: 2;
+    }
+    .righty img, .lefty img {
+        grid-row-start: 1;
+    }
+    .worky-content {
+        padding: 2em 2em 2em 2em;
+    }
+}
+
+@media only screen and (max-width: 752px) {
+    .Hero-Img {
+        position: relative;
+        right: 14em;
+        z-index: 1;
+    }
+    .Hero-Content {
+        position: relative;
+        z-index: 2;
+        top: 190%;
+    }
+}
+
+
+@media only screen and (max-width: 646px) {
+    .Hero-Img {
+        right: 0em;
+        top: 15em;
+    }
+    .Hero-Content h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Desktop-Video {
+      display: none;
+    }
+
+    .Mobile-Video {
+      display: block;
+    }
+
+    .Hero-grid {
+        top: -57rem;
+    }
+
+    .Hero-Content {
+        right: 0%;
+        width: 90%;
+    }
+
+    .Hero-Content h1{
+        font-size: 40px;
+    }
+
+    .Hero-Content span{
+        font-size: 22px;
+    }
+
+    body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
+        width: 300px !important;
+        height: 270px !important;
+    }
+}
     <div class="nav-wrapper">
         <nav class="main-nav">
               <a href="index.html" class="hover-this"><span>Home</span></a>
