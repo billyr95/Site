@@ -1,0 +1,60 @@
+.video-background {
+    position: relative;
+    width: 100%;
+}
+      
+#bgvid {
+    width: 100%;
+}
+.worktype-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.worktype-grid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 48.5% 48.5%;
+    width: 90%;
+    margin: 0 auto;
+    grid-gap: 30px;
+}
+
+.worktype-card {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: inset 20px 20px 60px #cdcdcd, inset -20px -20px 60px #ffffff;
+}
+
+.worktype-img img {
+    border-radius: 20px 20px 20px 0px;
+}
+
+.worktype-card-content {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 20% 50% 30%;
+}
+
+.worktype-button a {
+    text-align: center;
+    text-decoration: none;
+    color: #F1F1F1;
+    padding: 0.5em 3EM;
+    background: #161616;
+    border-radius: 50px;
+    font-family: "Monument Extended";
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4px );
+}
+
+@media only screen and (max-width: 10000px) {
+    .Mobile-Video {
+      display: none;
+    }
+  }

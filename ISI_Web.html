@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 1.8rem;
+            color: #f1f1f1;
+            font-family: 'Questrial', sans-serif;
+        }
+
+        h3 {
+            font-size: 2.5em;
+            color: #f1f1f1;
+        }
+
+        a {
+            color: #f1f1f1;
+            font-family: "Monument Extended" !important;
+        }
+        
+        .container {
+            width: 80%;
+            display: block;
+            margin: 7em auto;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 50%;
+        }
+
+        .intro-content {
+            color: #f1f1f1;
+        }
+
+        .intro-content h2 {
+            font-size: 3.2em;
+            margin: 1.5rem 0px 1.5rem 0px;
+        }
+
+        .ISI-HP-Video {
+            margin-top: 3.2em;
+        }
+
+        .bg-img img {
+            content: "";
+            position: absolute;
+            margin-top: -1.4rem;
+            right: 6rem;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .ISI-HP-Video video{
+            width: 100%;
+            z-index: 2;
+            position: relative;
+        }
+
+        .main-content {
+            text-align: center;
+            margin: 5em 0em;
+        }
+
+        .main-content h3 {
+            margin-bottom: 4rem;
+        }
+
+        .tools-inner {
+            display: grid;
+            grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .tools {
+            justify-items: center;
+            align-items: center;
+            display: grid;
+        }
+
+        .tools p {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .TL-container {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0;
+            background-color: #111;
+        }
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.right-img {
+    position: absolute;
+    right: -360px;
+    top: 30px;
+}
+.left-img {
+    position: absolute;
+    left: -360px;
+    top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+@media only screen and (max-width: 10000px) {
+    .mobile-img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .left-img, .right-img {
+      display: none;
+  }
+    .mobile-img {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .mobile-img img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+    </style>
+    <div class="nav-wrapper">
+        <nav class="main-nav">
+              <a href="index.html" class="hover-this"><span>Home</span></a>
+              <a href="work.html" class="hover-this"><span>Work</span></a>
+              <a href="#" class="hover-this"><span>About</span></a>
+              <a href="#" class="hover-this"><span>Contact</span></a>
+              <div class="cursor"></div>
+        </nav>
+        <button class="hamburger">
+              <div class="bar"></div>
+        </button>
+    </div>
+    <nav class="mobile-nav">
+        <a href="index.html"><span>Home</span></a>
+        <a href="work.html"><span>Work</span></a>
+        <a href="#"><span>About</span></a>
+        <a href="#"><span>Contact</span></a>
+    </nav>
+    <div class="container">
+        <div class="intro-grid">
+            <div class="intro-content">
+                <p>Design & Development</p>
+                <h2>Incentive Solutions</h2>
+                <p>Incentive Solutions is a SASS based performance tracking tool, that tracks Sales Teams, Distributor Channels, amongst many other things. Inspiring growth since 1994, Incentive Solutions has been an industry leader working with clients such with a wide range of clients from small businesses to large enterprises</p>
+                <p><a href="https://www.incentivesolutions.com/">incentivesolutions.com</a></p>
+            </div>
+        </div>
+        <div class="ISI-HP-Video">
+            <div class="bg-img">
+                <img src="images/Wyoming09.png" alt="" width="400px" height="300px">
+            </div>
+            <video>  <source src="Video/LINES_05_NonWO.mp4" type="video/mp4"></video>
+        </div>
+        <div class="tools-wrapper">
+            <div class="main-content">
+                <h3>Tools</h3>
+                <p>What skills and tools I used to help design and make pages for the site
+                </p>
+            </div>
+            <div class="tools-imgs">
+                <div class="tools-inner">
+                    <div class="tools grid1">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>Wordpress</p>
+                    </div>
+                    <div class="tools grid2">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>HTML</p>
+                    </div>
+                    <div class="tools grid3">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>CSS</p>
+                    </div>
+                    <div class="tools grid4">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tools grid5">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>PHP</p>
+                    </div>
+                    <div class="tools grid6">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>XD</p>
+                    </div>
+                    <div class="tools grid7">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>Illustrator</p>
+                    </div>
+                    <div class="tools grid8">
+                        <div style="width: 100px; height: 100px; background: green;"></div>
+                        <p>After Effects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="process-wrapper">
+            <div class="main-content">
+                <h3>Process</h3>
+                <p>Highlighting the process of how I build and design pages</p>
+            </div>
+            <div class="TL-container">
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <div class="timeline-content">
+                                <div class="mobile-img">
+                                    <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                                </div>
+                                <h2 class="steps">Step 1</h2>
+                                <h1>Identify</h1>
+                                <p>Identify which pages are underperforming on the site. Figure out whether it's SEO, design, or speed. From there I decide how to approach the reworking of the page.</p>
+                            </div>
+                            <div class="timeline-img right-img">
+                                <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <div class="mobile-img">
+                                    <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                                </div>
+                                <h2 class="steps">Step 2</h2>
+                                <h1>Lo-Fi Mockup</h1>
+                                <p>After I identify some issues, I begin mocking up a lo-fi wire frame, this helps me figure out placement of content, padding, margin, and for our writers what a good work count can be for content.</p>
+                            </div>
+                            <div class="timeline-img left-img">
+                                <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <div class="mobile-img">
+                                    <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                                </div>
+                                <h2 class="steps">Step 3</h2>
+                                <h1>Hi-Fi Mockup</h1>
+                                <p>This step is the most important to me, I design the page to look exactly as it will when it's live. The colors, imagery, the visual hierarchy. All of this I do prior to coding at all to save time and receive approval.</p>
+                            </div>
+                            <div class="timeline-img right-img">
+                                <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <div class="mobile-img">
+                                    <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                                </div>
+                                <h2 class="steps">Step 4</h2>
+                                <h1>Development</h1>
+                                <p>From here I code the page out to the exact specification of the mock up, I stay mostly true to it, but sometimes things change. I start by structuring out all of the HTML and placing content, and palceholders for anything that involves JavaScript. After the HTML I do all the CSS minus the media queries. Once the main CSS is complete I do all my JavaScript coding and finally do all of my responsive work.</p>
+                            </div>
+                            <div class="timeline-img left-img">
+                                <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <div class="mobile-img">
+                                    <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                                </div>
+                                <h2 class="steps">Step 5</h2>
+                                <h1>Launch</h1>
+                                <p>Everything from forms, JS, and responsiveness is tested prior to launch to ensure the best possible experience I can deliver. When launching we use Google Optimize to AB test the page, and stay vigilant should any issues come up. /p>
+                            </div>
+                            <div class="timeline-img right-img">
+                                <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <div class="mobile-img">
+                                    <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                                </div>
+                                <h2 class="steps">Step 6</h2>
+                                <h1>Post-Launch</h1>
+                                <p>After the AB test is run I look at the results and figure out how successful the page was, regardless of any short comings what try and figure out what works and what didn't for future.</p>
+                            </div>
+                            <div class="timeline-img left-img">
+                                <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--nav JS-->
+<script>
+        (function () {
+  
+            const link = document.querySelectorAll('nav > .hover-this');
+            const cursor = document.querySelector('.cursor');
+  
+            const animateit = function (e) {
+            const span = this.querySelector('span');
+            const { offsetX: x, offsetY: y } = e,
+            { offsetWidth: width, offsetHeight: height } = this,
+  
+            move = 25,
+            xMove = x / width * (move * 2) - move,
+            yMove = y / height * (move * 2) - move;
+  
+            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+  
+            if (e.type === 'mouseleave') span.style.transform = '';
+            };
+  
+            const editCursor = e => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+            };
+  
+            link.forEach(b => b.addEventListener('mousemove', animateit));
+            link.forEach(b => b.addEventListener('mouseleave', animateit));
+            window.addEventListener('mousemove', editCursor);
+  
+        })();
+</script>
+
+<!--Hamburger JS-->
+<script>
+    window.onload = function () {
+          const menu_btn = document.querySelector('.hamburger');
+          const mobile_menu = document.querySelector('.mobile-nav');
+
+          menu_btn.addEventListener('click', function () {
+                menu_btn.classList.toggle('is-active');
+                mobile_menu.classList.toggle('is-active');
+
+          });
+    }
+</script>  
+</body>
+</html>
