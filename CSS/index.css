@@ -300,16 +300,9 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 752px) {
-    .Hero-Img {
-        position: relative;
-        right: 14em;
-        z-index: 1;
-    }
-    .Hero-Content {
-        position: relative;
-        z-index: 2;
-        top: 190%;
+@media only screen and (max-width: 841px) {
+    .worky-content h2 {
+        font-size: 25px;
     }
 }
 
@@ -324,9 +317,6 @@ h2 {
         padding: 0.5em;
         font-size: 12px;
     }
-}
-
-@media only screen and (max-width: 768px) {
     body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
         width: 60% !important;
         height: 40% !important;
@@ -350,6 +340,18 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 752px) {
+    .Hero-Img {
+        position: relative;
+        right: 14em;
+        z-index: 1;
+    }
+    .Hero-Content {
+        position: relative;
+        z-index: 2;
+        top: 190%;
+    }
+}
 
 
 @media only screen and (max-width: 646px) {
