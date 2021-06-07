@@ -253,6 +253,12 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 1477px) {
+    .skillbar-content {
+        margin-bottom: 1em;
+    }
+}
+
 @media only screen and (max-width: 1258px) {
     .Hero-grid {
         top: -36rem;
@@ -284,6 +290,12 @@ h2 {
 @media only screen and (max-width: 1068px) {
 .Hero-grid {
     top: -33rem;
+    }
+}
+
+@media only screen and (max-width: 1027px) {
+    .skill-container {
+        grid-template-columns: 100%;
     }
 }
 
