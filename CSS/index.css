@@ -301,7 +301,7 @@ h2 {
 
 @media only screen and (max-width: 1024px) {
     .Hero-Content {
-        top: 120%;
+        top: 40%;
         right: 0%;
     }
 }
@@ -312,9 +312,47 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 841px) {
+@media only screen and (max-width: 944px) {
+    .Hero-Content {
+        top: 75%;
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
     .worky-content h2 {
         font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    .Hero-Content {
+        right: 7%;
+    }
+}
+
+@media only screen and (max-width: 798px) {
+    .wrapper {
+        width: 300px;
+        height: 200px;
+    }
+    .wrapper canvas {
+        width: 100%;
+        height: 90%;
+    }
+    .Hero-Img {
+        position: relative;
+        right: -6em;
+        top: 11em;
+        z-index: 1;
+    }
+    .Hero-Content {
+        right: 4%;
+    }
+    .Hero-Content {
+        position: relative;
+        z-index: 2;
+        top: 190%;
     }
 }
 
@@ -329,10 +367,6 @@ h2 {
         padding: 0.5em;
         font-size: 12px;
     }
-    body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
-        width: 60% !important;
-        height: 40% !important;
-    }  
 }
 
 @media only screen and (max-width: 758px) {
@@ -352,27 +386,65 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 752px) {
-    .Hero-Img {
-        position: relative;
-        right: 14em;
-        z-index: 1;
+@media only screen and (max-width: 702px) {
+    .Hero-Content h1 {
+        font-size: 50px;
     }
-    .Hero-Content {
-        position: relative;
-        z-index: 2;
-        top: 190%;
+    .Hero-Content span {
+        font-size: 23px;
     }
 }
 
-
 @media only screen and (max-width: 646px) {
     .Hero-Img {
-        right: 0em;
-        top: 15em;
+        right: -7em;
+        top: 14em;
+    }
+    .Hero-Content {
+        top: 270%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 300px;
+        height: 200px;
+    }
+    body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
+        width: 80% !important;
+        height: 70% !important;
+    }
+    .Hero-Img {
+        right: -8em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .Hero-Content {
+        top: 280%;
+        right: 0%;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    .Hero-Content {
+        top: 310%;
+    }
+    .Hero-Img {
+        right: -8em;
+        top: 18em;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .Hero-Content {
+        top: 360%;
     }
     .Hero-Content h1 {
-        font-size: 50px;
+        font-size: 40px;
+    }
+    .Hero-Img {
+        right: -3em;
     }
 }
 
@@ -394,10 +466,6 @@ h2 {
         width: 90%;
     }
 
-    .Hero-Content h1{
-        font-size: 40px;
-    }
-
     .Hero-Content span{
         font-size: 22px;
     }
@@ -405,5 +473,11 @@ h2 {
     body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
         width: 300px !important;
         height: 270px !important;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .Hero-Img {
+        right: 2em;
     }
 }
