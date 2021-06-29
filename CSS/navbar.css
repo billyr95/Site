@@ -208,3 +208,8 @@ span {
         display: none;
     }
 }
+@media(max-width: 425px) {
+    .cursor {
+        display: none;
+    }
+}  
