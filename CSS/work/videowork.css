@@ -48,9 +48,17 @@ a {
     grid-template-columns: 50% 50%;
     align-items: center;
     justify-items: center;
-    grid-gap: 2em;
+    grid-gap: 4em;
 }
 .video-content span {
     font-size: 12px;
     font-family: 'Questrial', sans-serif;
+}
+@media only screen and (max-width: 1275px) {
+    .video-grid {
+        grid-template-columns: 100%;
+    }
+    .gridfixer {
+        grid-row-start: 2;
+    }
 }
