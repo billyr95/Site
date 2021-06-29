@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="CSS/work.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div class="nav-wrapper">
         <nav class="main-nav">
-              <a href="index.html" class="hover-this"><span>Home</span></a>
-              <a href="work.html" class="hover-this"><span>Work</span></a>
-              <a href="#" class="hover-this"><span>About</span></a>
-              <a href="#" class="hover-this"><span>Contact</span></a>
+            <a href="index.html" class="hover-this" id="home-nav"><span>Home</span></a>
+            <a href="work.html" class="hover-this" id="work-nav"><span>Work</span></a>
+            <a href="#" class="hover-this" id="about-nav"><span>About</span></a>
+            <a href="#" class="hover-this" id="contact-nav"><span>Contact</span></a>
               <div class="cursor"></div>
         </nav>
         <button class="hamburger">
@@ -40,62 +42,59 @@
                         <source src="Video/LINES_Mobile.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="work-title">
-                    <h1>WORK</h1>
-                </div>
             </div>
     </div>
     <div class="worktype-container">
         <div class="worktype-content">
-            <h2>Works Title</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut fugiat deserunt nulla adipisci minus quod.</span>
+            <h2 id="main-h2">Works</h2>
+            <p id="main-p">A collection of my work thorugh various mediums.</p>
         </div>
         <div class="worktype-grid">
-            <div class="worktype-card">
-                <div class="worktype-img">
-                    <img src="images/Wyoming09.png" height="250px" width="250px"alt="">
+            <div class="worktype-card" id="first-card">
+                <div class="worktype-img" id="first-img">
+                    <img src="images/home/PortfolioImg-15.png" height="240px" width="300px"alt="">
                 </div>
                 <div class="worktype-card-content">
-                    <h3>Web Design</h3>
-                    <p>Collection of Web projects I designed and developed</p>
-                    <div class="worktype-button">
-                        <a href="ISI_Web.html">CTA</a>
+                    <h3 id="first-h3">Web Design</h3>
+                    <p id="first-p">Collection of Web projects I designed and developed.</p>
+                    <div class="worktype-button" id="first-a">
+                        <a href="ISI_Web.html">Check it out</a>
                     </div>
                 </div>
             </div>
-            <div class="worktype-card">
-                <div class="worktype-img">
-                    <img src="images/Wyoming09.png" height="250px" width="250px"alt="">
+            <div class="worktype-card" id="second-card">
+                <div class="worktype-img" id="second-img">
+                    <img src="images/home/PortfolioImg-16.png" height="240px" width="300px"alt="">
                 </div>
                 <div class="worktype-card-content">
-                    <h3>Video & Motion Design</h3>
-                    <p>Collection of videos I produced and created</p>
-                    <div class="worktype-button">
-                        <a href="video.html">CTA</a>
+                    <h3 id="second-h3">Video & Motion Design</h3>
+                    <p id="second-p">Collection of videos I produced and created.</p>
+                    <div class="worktype-button" id="second-a">
+                        <a href="video.html">Check it out</a>
                     </div>
                 </div>
             </div>
-            <div class="worktype-card">
-                <div class="worktype-img">
-                    <img src="images/Wyoming09.png" height="250px" width="250px"alt="">
+            <div class="worktype-card" id="third-card">
+                <div class="worktype-img" id="third-img">
+                    <img src="images/home/PortfolioImg-17.png" height="240px" width="300px"alt="">
                 </div>
                 <div class="worktype-card-content">
-                    <h3>Graphic Design</h3>
-                    <p>Collection of various graphic work</p>
-                    <div class="worktype-button">
-                        <a href="graphic.html">CTA</a>
+                    <h3 id="third-h3">Graphic Design</h3>
+                    <p id="third-p">Collection of my various graphic work.</p>
+                    <div id="third-a" class="worktype-button">
+                        <a href="graphic.html">Check it out</a>
                     </div>
                 </div>
             </div>
-            <div class="worktype-card">
-                <div class="worktype-img">
-                    <img src="images/Wyoming09.png" height="250px" width="250px"alt="">
+            <div class="worktype-card" id="fourth-card">
+                <div class="worktype-img" id="fourth-img">
+                    <img src="images/home/PortfolioImg-18.png" height="240px" width="300px"alt="">
                 </div>
                 <div class="worktype-card-content">
-                    <h3>Experiments</h3>
-                    <p>Projects that I've done to help me learn new skills</p>
-                    <div class="worktype-button">
-                        <a href="">CTA</a>
+                    <h3 id="fourth-h3">Experiments</h3>
+                    <p id="fourth-p">Projects that I've done to help me learn new skills and in my free time.</p>
+                    <div id="fourth-a" class="worktype-button">
+                        <a href="">Coming Soon</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +134,45 @@
   
         })();
 </script>
-
+<!--GSAP-->
+<script>
+    gsap.from('.video', { opacity: 0, duration: 2.5, ease: 'Power2.easeInOut'})
+      gsap.from('#home-nav', { opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+    gsap.from('#work-nav', {delay: 0.25, opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+    gsap.from('#about-nav', {delay: 0.5, opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+    gsap.from('#contact-nav', {delay: 0.75, opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+    gsap.from('#main-h2', {delay: 1.5, opacity: 0, duration: .5, x:-200, ease: 'Power2.easeInOut'})
+    gsap.from('#main-p', {delay: 2, opacity: 0, duration: .5, x:200, ease: 'Power2.easeInOut'})
+  </script>
+<script>
+  let tl = gsap.timeline({
+             scrollTrigger: {
+                   trigger: '#main-h2',
+                   start: "top center",
+             }
+       });
+  
+       tl.from("#first-card" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#first-img" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#first-h3" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#first-p" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#first-a" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-card" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-img" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-h3" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-p" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-a" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-card" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-img" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-h3" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-p" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-a" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-card" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-img" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-h3" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-p" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-a" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+</script>
 <!--Hamburger JS-->
 <script>
     window.onload = function () {

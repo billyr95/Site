@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="CSS/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div class="nav-wrapper">
         <nav class="main-nav">
-              <a href="index.html" class="hover-this"><span>Home</span></a>
-              <a href="work.html" class="hover-this"><span>Work</span></a>
-              <a href="#" class="hover-this"><span>About</span></a>
-              <a href="#" class="hover-this"><span>Contact</span></a>
+              <a href="index.html" class="hover-this" id="home-nav"><span>Home</span></a>
+              <a href="work.html" class="hover-this" id="work-nav"><span>Work</span></a>
+              <a href="#" class="hover-this" id="about-nav"><span>About</span></a>
+              <a href="#" class="hover-this" id="contact-nav"><span>Contact</span></a>
               <div class="cursor"></div>
         </nav>
         <button class="hamburger">
@@ -46,54 +48,53 @@
         </div>
         <div class="Hero-grid">
             <div class="Hero-Content">
-                <H1>Billy Riley</H1>
-                <span>Web Designer & Developer</span>
+                <H1 id="hero-h1">Billy Riley</H1>
+                <span id="hero-span">Web Designer & Developer</span>
             </div>
-            <div class="Hero-Img">
+            <div id="distort" class="Hero-Img">
                 <div class="wrapper"></div> 
             </div>
         </div>
     </div>
     <div class="work-container">
         <div class="work-title">
-            <h1>Work</h1>
             <div class="work-grid">
                 <div class="webdesign-container righty">
-                    <div class="worky-content">
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae labore impedit temporibus placeat recusandae numquam.</p>
-                        <div class="work-link">
+                    <div class="worky-content" id="first-content">
+                        <h2 id="first-content-h2">Web Design</h2>
+                        <p id="first-content-p">Take a look at my process for developing and designing web pages at my current in-house role.</p>
+                        <div id="first-content-a" class="work-link">
                             <a href="ISI_Web.html">Learn More</a>
                         </div>
                     </div>
-                    <img src="images/Wyoming09.png" alt="" style="width: 100%;">
+                    <img id="first-img" src="images/home/PortfolioImg-15.png" alt="" style="width: 100%;">
                 </div>
                 <div class="video-container lefty">
-                    <img src="images/Wyoming09.png" alt="" style="width: 100%;">
-                    <div class="worky-content">
-                        <h2>Video & Motion Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae labore impedit temporibus placeat recusandae numquam.</p>
-                        <div class="work-link">
+                    <img id="second-img" src="images/home/PortfolioImg-16.png" alt="" style="width: 100%;">
+                    <div class="worky-content" id="second-content">
+                        <h2 id="second-content-h2">Video & Motion Design</h2>
+                        <p id="second-content-p">Here is a collection of videos I've made in-house for the current company I work for.</p>
+                        <div class="work-link" id="second-content-a">
                             <a href="video.html">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="graphicdesign-container righty">
-                    <div class="worky-content">
-                        <h2>Graphic Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae labore impedit temporibus placeat recusandae numquam.</p>
-                        <div class="work-link">
+                    <div class="worky-content" id="third-content">
+                        <h2 id="third-content-h2">Graphic Design</h2>
+                        <p id="third-content-p">Various pieces of coporate collateral that I have made for Incentive Solutions, their clients, and for their participants</p>
+                        <div class="work-link" id="third-content-a">
                             <a href="">Learn More</a>
                         </div>
                     </div>
-                    <img src="images/Wyoming09.png" alt="" style="width: 100%;"> 
+                    <img id="third-img" src="images/home/PortfolioImg-17.png" alt="" style="width: 100%;"> 
                 </div>
                 <div class="experiments-container lefty">
-                    <img src="images/Wyoming09.png" alt="" style="width: 100%;">
-                    <div class="worky-content">
-                        <h2>Experiments</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae labore impedit temporibus placeat recusandae numquam.</p>
-                        <div class="work-link">
+                    <img id="fourth-img" src="images/home/PortfolioImg-18.png" alt="" style="width: 100%;">
+                    <div class="worky-content" id="fourth-content">
+                        <h2 id="fourth-content-h2">Experiments</h2>
+                        <p id="fourth-content-p">Various experiments and personal projects I've made, inclduing my React and Processing work.</p>
+                        <div class="work-link" id="fourth-content-a">
                             <a href="">Learn More</a>
                         </div>
                     </div>
@@ -103,22 +104,24 @@
     </div>
     <div class="about-container">
         <div class="About-title">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptates alias facere explicabo fugiat animi iusto quaerat, molestias ex, eligendi quas debitis odio eaque obcaecati!</p>
+          <div class="about-contain">
+            <h2 id="about-title">About</h2>
+            <p id="about-p">Some of the various skills I have acquired over my years of practice</p>
+          </div>
         <div class="skill-center">
             <div class="skill-container">
                 <div class="skillbar-grid" id="HTML-BAR">
-                    <div class="skillbar-container">
+                    <div class="skillbar-container" id="skill-contain-row-one">
                         <div class="skillbar-skill">
-                            <div class="skill-logo">
+                            <div class="skill-logo" id="skill-contain-logo-row-one">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="0 0 538.584 538.583"><path d="M0 0h538.584v538.583H0V0z" fill="none"/><path d="M405.5 467.454L269.29 504.13l-136.212-36.676-31.432-340.525h335.29L405.5 467.454z" fill="#2062af"/><path d="M269.289 154.511v320.367l.308.084 110.229-29.682 25.443-290.769h-135.98z" fill="#3c9cd7"/><path d="M191.985 76.899V56.631h29.571V34.453h-51.749v62.684h51.749V76.899h-29.571zm82.766-20.268h20.674V34.453h-51.754v22.178c6.924 6.924 10.535 10.238 20.549 20.252-5.854 0-20.549.021-20.549.02v20.234h51.754V76.899l-20.674-20.268zm73.352 0h20.673V34.453H317.02v22.178c6.924 6.924 10.537 10.238 20.551 20.252-5.852 0-20.551.021-20.551.02v20.234h51.757V76.899l-20.674-20.268z"/><path d="M269.168 239.656l-97.49 40.602 3.233 40.199 94.257-40.301 100.265-42.868 4.157-41.122-104.422 43.49z" fill="#fff"/><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-825.508" y1="1338.301" x2="-825.508" y2="1419.102" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stop-color="#d1d3d4" stop-opacity="0"/><stop offset="1" stop-color="#d1d3d4"/></linearGradient><path d="M171.677 280.258l3.233 40.199 94.257-40.301v-40.5l-97.49 40.602z" fill="url(#a)"/><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-724.552" y1="1378.602" x2="-724.552" y2="1462.591" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset=".387" stop-color="#d1d3d4" stop-opacity="0"/><stop offset="1" stop-color="#d1d3d4"/></linearGradient><path d="M373.59 196.167l-104.422 43.489v40.5l100.265-42.868 4.157-41.121z" fill="url(#b)"/><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="-874.103" y1="1302.263" x2="-680.039" y2="1302.263" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stop-color="#e8e7e5"/><stop offset="1" stop-color="#fff"/></linearGradient><path d="M171.827 280.258l3.234 40.199 144.625.461-3.235 53.598-47.59 13.398-45.748-11.551-2.772-33.268h-42.508l5.545 64.225 85.945 25.412 85.479-24.951 11.09-127.523H171.827z" fill="url(#c)"/><path d="M269.168 280.258h-97.49l3.233 40.199 94.257.301v-40.5zm0 107.528l-.462.129-45.742-11.551-2.772-33.268h-42.507l5.544 64.225 85.939 25.412v-44.947z" opacity=".05"/><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="-883.032" y1="1442.031" x2="-672.341" y2="1442.031" gradientTransform="matrix(1 0 0 -1 1045.93 1658.759)"><stop offset="0" stop-color="#e8e7e5"/><stop offset="1" stop-color="#fff"/></linearGradient><path d="M162.898 196.167H373.59l-4.157 41.122H167.98l-5.082-41.122z" fill="url(#d)"/><path d="M269.168 196.167h-106.27l5.082 41.122h101.188v-41.122z" opacity=".05"/></svg>
                             </div>
                         </div>
                         <div class="skillbar">
                             <div class="skillbar-content">
-                                <h3>HTML/CSS</h3>
-                                <p>3 years</p>
-                                <span>90%</span>
+                                <h3 id="skill-contain-h3-row-one">HTML/CSS</h3>
+                                <p id="skill-contain-p-row-one">3 years</p>
+                                <span id="skill-contain-span-row-one">90%</span>
                             </div>
                             <div class="skillbar-bar">
                                 <div class="skillbar-inner HTMLCSS"></div>
@@ -580,7 +583,84 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 <script src="JS/hover-effect.umd.js"></script>
 <script src="JS/liquidimage.js"></script>
+<!--GSAP-->
+<script>
+  gsap.from('.video', { opacity: 0, duration: 2.5, ease: 'Power2.easeInOut'})
+	gsap.from('#home-nav', { opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+  gsap.from('#work-nav', {delay: 0.25, opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+  gsap.from('#about-nav', {delay: 0.5, opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+  gsap.from('#contact-nav', {delay: 0.75, opacity: 0, duration: 2.5, y:-200, ease: 'Power2.easeInOut'})
+  gsap.from('#hero-h1', {delay: 1.5, opacity: 0, duration: 2.5, x:-200, ease: 'Power2.easeInOut'})
+  gsap.from('#hero-span', {delay: 2, opacity: 0, duration: 2.5, x:200, ease: 'Power2.easeInOut'})
+  gsap.from('#distort', {delay: 2.5, opacity: 0, duration: 2.5, y:200, ease: 'Power2.easeInOut'})
+</script>
+<script>
+  let tl = gsap.timeline({
+             scrollTrigger: {
+                   trigger: '#first-content',
+                   start: "top center",
+             }
+       });
+  
+       tl.from("#first-content-h2" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#first-content-p" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#first-content-a" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#first-img" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       
+  let tl2 = gsap.timeline({
+             scrollTrigger: {
+                   trigger: '#second-content',
+                   start: "bottom top",
+             }
+       });
+  
+       tl.from("#second-content-h2" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-content-p" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-content-a" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#second-img" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
 
+  let tl3 = gsap.timeline({
+             scrollTrigger: {
+                   trigger: '#third-content',
+                   start: "top top",
+             }
+       });
+  
+       tl.from("#third-content-h2" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-content-p" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-content-a" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#third-img" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+  let tl4 = gsap.timeline({
+             scrollTrigger: {
+                   trigger: '#fourth-content',
+                   start: "top top",
+             }
+       });
+  
+       tl.from("#fourth-content-h2" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-content-p" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-content-a" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#fourth-img" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+  let tl5 = gsap.timeline({
+             scrollTrigger: {
+                   trigger: '#fourth-content-a',
+                   start: "top top",
+             }
+       });
+  
+       tl.from("#about-title" , { y: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#about-p" , { y: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#HTML-BAR" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#JavaScript-BAR" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#Wordpress-BAR" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#XD-BAR" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#AfterEffects-BAR" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#Illustrator-BAR" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#Premiere-BAR" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#Cinema-BAR" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#React-BAR" , { x: -200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+       tl.from("#Processing-BAR" , { x: 200, opacity: 0, duration: .5, ease: 'Power2.easeInOut' })
+</script>
 <!--nav JS*/-->
 <script>
         (function () {

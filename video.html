@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/navbar.css">
-    <link rel="stylesheet" href="CSS/work/video.css">
+    <link rel="stylesheet" href="CSS/work/videowork.css"
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 </head>
@@ -29,57 +29,48 @@
         <a href="#"><span>About</span></a>
         <a href="#"><span>Contact</span></a>
     </nav>
-    <div class="video-wrapper">
-        <div class="video-content">
-            <h1>Video & Motion Design</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus mollitia alias libero dignissimos hic non?</p>
-        </div>
-        <div class="video-container">
-            <div class="video-grid">
-                <div class="inner-box">
-                    <div class="home-box">
-                        <div class="ISI-Home-Content">
-                            <h3 class="colory">Motion Graphics</h3>
-                            <p class="colory">Collection of my motion graphics work, from intro, outros, and different one off pieces</p>
-                            <div class="Web-buttons">
-                                <a href="">CTA</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Rewards-Mall">
-                    <div class="landing-grid">
-                        <div class="inner-box">
-                            <div class="Rewards-box">
-                                <div class="ISI-Home-Content">
-                                    <h3 class="colory">Incentive Solutions Rewards Mall Video</h3>
-                                    <p class="colory">Video showing off what rewards you can get with Incentive Solution's rewards catalog.</p>
-                                    <div class="Web-buttons">
-                                        <a href="">CTA</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Pipeline">
-                    <div class="TUO-grid">
-                        <div class="inner-box">
-                            <div class="home-box">
-                                <div class="ISI-Home-Content">
-                                    <h3 class="colory">Incentive Solutions Pipeline Probowl</h3>
-                                    <p class="colory">Weekly internal sales video to pump up internal sales</p>
-                                    <div class="Web-buttons">
-                                        <a href="">CTA</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="video-hero">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <p>Video & Motion Design</p>
+                    <h2>Video & Motion Design</h2>
+                    <p>Here is a collection of some of my video and motion graphics projects that I've worked on. From directing to designing motion graphics I currently work as a one man crew.</p>
                 </div>
             </div>
         </div>
+        <div class="video-grid">
+            <div class="righty-video video-placeholder">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kMIWuzM6KhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="lefty-video video-content">
+                <h3>Incentive Solutions Rewards Mall Video</h3>
+                <p>FOr this project I was tasked to create a video for our rewards catalog to show our clients and potential clients what they can receive from Incentive Solutions expansive catalog of rewards</p>
+                <span><strong>Tools used:</strong> After Effects, Audition</span>
+            </div>
+        </div>
+        <div class="video-grid">
+            <div class="righty-video video-content">
+                <h3>Incentive Solutions Never Do Incentives Alone</h3>
+                <p>On this project I was tasked with writing, directing, and filming an ad targeted to show clients what could go wrong if they try and mange their own incentive program internally as opposed to working with us. </p>
+                <span><strong>Tools used:</strong> Blackmagic Pocket Cinema Camera, Premiere Pro, After Effects, Photoshop, Audition</span>
+            </div>
+            <div class="lefty-video video-placeholder">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zDIBwKPhi-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video-grid">
+            <div class="righty-video video-placeholder">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xgExtpQj3VI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="lefty-video video-content">
+                <h3>Welcome to the Incentive Solutions Communications Corner</h3>
+                <p>This Video was created to show potential clients the capabilities of our communicatioin services that we offer in our incentive programs. The biggest challenge of this project was working with someone that had no prior experience with being filmed, it was quite a challnege with the direction I wanted the video to go, but after a solid round of takes the talent nailed the script with some help from my direction. </p>
+                <span><strong>Tools used:</strong> Blackmagic Pocket Cinema Camera, Premiere Pro, After Effects, Audition</span>
+            </div>
+        </div>
     </div>
+
 <!--nav JS-->
 <script>
         (function () {
@@ -114,7 +105,7 @@
         })();
 </script>
 
-<!--Hamburger JS/*-->
+<!--Hamburger JS-->
 <script>
     window.onload = function () {
           const menu_btn = document.querySelector('.hamburger');
@@ -126,7 +117,6 @@
 
           });
     }
-</script>
-
+</script>  
 </body>
 </html>

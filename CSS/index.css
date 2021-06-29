@@ -26,6 +26,7 @@ h2 {
     position: relative;
     top: 20%;
     right: 10%;
+    z-index: 2;
 }
 
 .Hero-Img {
@@ -66,7 +67,9 @@ h2 {
     align-content: center;
 }
 .worky-content p {
-    color: #f1f1f1
+    color: #f1f1f1;
+    font-size: 25px;
+    line-height: 1.5em;
 }
 .work-link a{
     text-decoration: none;
@@ -80,6 +83,23 @@ h2 {
 /*About Section*/
 .about-container {
     background: #f1f1f1;
+}
+
+.about-contain {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-contain h2 {
+    color: #1f1f1f;
+    font-family: 'Questrial', sans-serif;
+    font-size: 65px;
+    font-weight: 900;
+    padding: 0.5em 0em 0em 0em;
+    margin: 0px;
+}
+.about-contain p {
+    font-size: 25px;
 }
 /*Skill Bars*/
 .skill-center {
@@ -155,6 +175,7 @@ h2 {
     text-align: right;
     color: #161616;
     font-size: 20px;
+    font-family: 'Questrial', sans-serif;
 }
 
 .skillbar-bar {
@@ -245,6 +266,10 @@ h2 {
     background: #052642;
     background: -webkit-linear-gradient(to right, #105796 , #052642);
     background: linear-gradient(to right, #105796 , #052642);
+}
+
+#AfterEffects-BAR > div > div.skillbar-skill > div > svg > path:nth-child(2), #Premiere-BAR > div > div.skillbar-skill > div > svg > path:nth-child(2), #Illustrator-BAR > div > div.skillbar-skill > div > svg > path:nth-child(2) {
+    display: none;
 }
 
 @media only screen and (max-width: 10000px) {
@@ -449,6 +474,9 @@ h2 {
 }
 
 @media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 50px;
+    }
     .Desktop-Video {
       display: none;
     }
@@ -468,6 +496,12 @@ h2 {
 
     .Hero-Content span{
         font-size: 22px;
+    }
+
+    .righty, .lefty {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
     }
 
     body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
