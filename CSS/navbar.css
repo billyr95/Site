@@ -4,6 +4,7 @@ html, body {
     width: 100%;
     background: #161616;
     cursor: none;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
