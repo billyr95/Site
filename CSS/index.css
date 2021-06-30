@@ -407,7 +407,7 @@ h2 {
         grid-row-start: 1;
     }
     .worky-content {
-        padding: 2em 2em 2em 2em;
+        padding: 0em 2em 2em 2em;
     }
     .worky-content {
         display: grid;
