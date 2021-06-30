@@ -413,6 +413,12 @@ h2 {
         display: grid;
         grid-template-rows: 60px 170px 60px;
     }
+    .worky-content p {
+        font-size: 21px;
+    }
+    .skillbar-content {
+        margin-bottom: 15px;
+    }
 }
 
 @media only screen and (max-width: 702px) {
