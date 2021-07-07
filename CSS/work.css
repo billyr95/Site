@@ -2,7 +2,10 @@
     position: relative;
     width: 100%;
 }
-      
+ body, html {
+     overflow-x: unset !important;
+     overflow: unset !important;
+ }     
 #bgvid {
     width: 100%;
 }
