@@ -68,10 +68,6 @@
     backdrop-filter: blur( 4px );
 }
 
-.worktype-img {
-    background-image: url('images/work/WebWorkIMg.jpg');
-}
-
 @media only screen and (max-width: 10000px) {
     .Mobile-Video {
       display: none;
