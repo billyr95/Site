@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Billy Riley</title>
-    <link rel="stylesheet" href="CSS/navbar.css" />
-    <link rel="stylesheet" href="CSS/about.css" />
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap"
@@ -16,8 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD3KY4F12L"
+    ></script>
     <!-- Hotjar Tracking Code for www.billy-e-riley.xyz -->
     <script>
       (function (h, o, t, j, a, r) {
@@ -34,6 +35,9 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   </head>
   <body>
     <div class="nav-wrapper">
@@ -41,7 +45,7 @@
         <a href="index.html" class="hover-this"><span>Home</span></a>
         <a href="work.html" class="hover-this"><span>Work</span></a>
         <a href="about.html" class="hover-this"><span>About</span></a>
-        <a href="contact.html" class="hover-this"><span>Contact</span></a>
+        <a href="#" class="hover-this"><span>Contact</span></a>
         <div class="cursor"></div>
       </nav>
       <button class="hamburger">
@@ -52,32 +56,18 @@
       <a href="index.html"><span>Home</span></a>
       <a href="work.html"><span>Work</span></a>
       <a href="about.html"><span>About</span></a>
-      <a href="contact.html"><span>Contact</span></a>
+      <a href="#"><span>Contact</span></a>
     </nav>
-    <style></style>
-    <div class="container">
-      <div class="about-container">
-        <div class="img-container">
-          <img src="images/BillyAbout.jpeg" alt="" />
-        </div>
-        <div class="content-container">
-          <h2>Hello, I'm Billy Riley</h2>
-          <p>
-            I am a designer with a wide array of skills, anything from graphic
-            to motion to web you name it, I've probably atleast dabbled in it. I
-            went to school at Georgia Southern Univeristy, where I got my
-            Bachelors of Science in Multimedia Communications. I primarily
-            studied Film and Photography while in school, but self taught myself
-            Graphic Design and HTML/CSS/JavaScript. I'm constantly seeking out
-            whats new and how I can use it. In 2021 my biggest personal project
-            is getting depper into Python so that I can eventually start making
-            my own generative art. I am an avid skiier and surfer eventhough I
-            live in Atlanta, Georgia. I also enjoy playing tennis and doing
-            Yoga.
-          </p>
-        </div>
-      </div>
-    </div>
+      <main>
+          <p>Send E-Mail</p>
+          <form class="contact-form" action="contactform.php" method="post">
+            <input type="text" name="name" placeholder="Full name">
+            <input type="text" name="mail" placeholder="Your e-mail">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" name="submit">SEND MAIL 💫</button>
+        </form>
+      </main>
     <!--nav JS-->
     <script>
       (function () {
