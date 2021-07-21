@@ -39,6 +39,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   </head>
+  <style>
+      .form-main {
+        display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    grid-template-columns: 60%;
+      }
+      p {
+          margin: 0;
+          color: #f1f1f1;
+      }
+      body > form > textarea, body > form > input[type=email]:nth-child(4), body > form > input[type=text]:nth-child(2) {
+        background: rgba( 255, 255, 255, 0.55 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+        margin-bottom: 2em;
+        font-size: 24px;
+      }
+      .form-input {
+          margin-bottom: 1em;
+          font-size: 26px;
+      }
+      body > form > button {
+        background: #0057FF;
+    border: 0px;
+    border-radius: 10px;
+    width: 20%;
+    font-size: 30px;
+    font-weight: bold;
+    place-self: center;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(255 255 255 / 20%);
+      }
+  </style>
   <body>
     <div class="nav-wrapper">
       <nav class="main-nav">
@@ -58,7 +99,20 @@
       <a href="#"><span>About</span></a>
       <a href="#"><span>Contact</span></a>
     </nav>
-
+    <form action="mailto:billy.e.riley@gmail.com"
+    method="POST"
+    enctype="multipart/form-data"
+    name="EmailForm"
+    class="form-main">
+        <p class="form-input">Name:</p>
+        <input type="text" size="19" name="Contact-Name">
+        <p class="form-input">Email:</p>
+        <input type="email" name="Contact-Email">
+        <p class="form-input">Message:</p>
+        <textarea name="Contact-Message" rows="6″ cols="20″>
+        </textarea>
+        <button type="submit" value="Submit">Send 💫</button>
+    </form> 
     <!--nav JS-->
     <script>
       (function () {
