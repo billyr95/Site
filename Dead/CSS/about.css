@@ -1,0 +1,36 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.container {
+    display: grid;
+align-items: center;
+justify-items: center;
+justify-content: center;
+align-content: center;
+height: 100vh;
+}
+.content-container {
+    width: 80%;
+}
+.content-container h2 {
+    font-size: 2em;
+    color: #F1F1F1;
+}
+.content-container p {
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #f1f1f1;
+}
+.img-container img {
+    width: 80%;
+border-radius: 50px;
+}
+.img-container {
+    display: grid;
+    justify-items: center;
+}

@@ -1,531 +1,140 @@
-h1 {
-    color: #fff;
-    font-size: 80px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: poppins;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
-}
-
-h2 {
-    color: #fff;
-    font-size: 45px;
-    letter-spacing: 0.2em;
-}
-/*Hero Section*/
-.Hero-grid {
-    top: -42rem;
-    width: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    padding: 0;
+  }
+  
+  figure {
+    margin: 0;
     position: relative;
-    height: 0px;
-}
-.Hero-Content {
-    display: grid;
-    position: relative;
-    top: 20%;
-    right: 10%;
-    z-index: 2;
-}
-
-.Hero-Img {
-    display: grid;
-    justify-content: center;
-}
-
-.wrapper {
-    width: 600px;
-    height: 400px;
-}
-/*Video Background*/
-.video-background {
-    position: relative;
+  }
+  figure h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-right: 3px solid #fff;
+    padding: 5px 10px 5px 5px;
+  }
+  
+  video {
     width: 100%;
-}
-      
-#bgvid {
-    width: 100%;
-}
-
-/*Work Section*/
-.righty {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.lefty {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.worky-content {
-    display: grid;
-    grid-template-rows: 30% 25% 30%;
-    align-items: center;
-    padding: 2em;
-    align-content: center;
-}
-.worky-content p {
+    max-width: 100%;
+    height: 100vh;
+  }
+.content {
+    position: fixed;
+    top: 60%;
     color: #f1f1f1;
-    font-size: 25px;
-    line-height: 1.5em;
-}
-.work-link a{
-    text-decoration: none;
-    color: #1f1f1f;
-    font-family: 'Orbitron', sans-serif;
-    background: white;
-    padding: 1em;
-    border-radius: 50px;
-}
-
-/*About Section*/
-.about-container {
-    background: #f1f1f1;
-}
-
-.about-contain {
-    width: 80%;
+    width: 100%;
+    display: grid;
+    overflow-x: hidden;
+    justify-content: center;
+    justify-items: center;
     margin: 0 auto;
 }
-
-.about-contain h2 {
-    color: #1f1f1f;
-    font-family: 'Questrial', sans-serif;
-    font-size: 65px;
-    font-weight: 900;
-    padding: 0.5em 0em 0em 0em;
-    margin: 0px;
+.container video {
+    height: auto;
+    width: 100%;
 }
-.about-contain p {
-    font-size: 25px;
-}
-/*Skill Bars*/
-.skill-center {
+.topgrid {
+    color: white;
     display: grid;
-    justify-items: center;
-}
-
-.skill-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    -webkit-grid-template-columns: 50% 50%;
-    width: 80%;
-}
-
-.skillbar-grid {
-    display: grid;
-    -webkit-grid-template-columns: 100%;
-    grid-template-columns: 100%;
-    margin: 30px 0px;
-}
-
-.skillbar-container {
-    display: grid;
-    -webkit-grid-template-columns: 15% 85%;
-    grid-template-columns: 15% 85%;
-}
-
-.skillbar-skill {
-    display: grid;
-}
-
-.skillbar-grid h3 {
-    position: relative;
-}
-
-.skill-logo svg {
-    width: 80%;
-    height: 100%;
-}
-
-.skill-logo {
-    align-items: center;
-    justify-items: center;
-    display: grid;
-}
-
-.skillbar {
-    display: grid;
-    align-items: center;
-    position: relative;
-    bottom: 13%;    
-}
-
-.skillbar-content {
-    display: grid;
-    -webkit-grid-template-columns: 40% 30% 30%;
-    grid-template-columns: 40% 30% 30%;
-    align-items: center;
-    width: 86%;
-    position: relative;
-    top: 25%;
-    left: 2%;
-}
-
-.skillbar-content h3{
-    margin: 0;
-    font-family: 'Questrial', sans-serif;
-}
-
-.skillbar-content p {
-    text-align: center;
-    margin: 0;
-    font-family: 'Questrial', sans-serif;
-}
-
-.skillbar-content span {
-    text-align: right;
-    color: #161616;
-    font-size: 20px;
-    font-family: 'Questrial', sans-serif;
-}
-
-.skillbar-bar {
-    background: rgba( 255, 255, 255, 0.50 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
-    border-radius: 100px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    height: 2em;
-    width: 90%;
-    display: grid;
-    align-items: center;
-}
-
-.skillbar-inner {
-    height: 1.7em;
-    border-radius: 100px;
-    position: relative;
-    left: 0.5%;
-}
-
-.HTMLCSS {
-    width: 90%;
-    background: #000046;
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
-    background: linear-gradient(to right, #1CB5E0, #000046);
-}
-
-.JavaScript {
-    width: 80%;
-    background: #CAC531;
-    background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);
-    background: linear-gradient(to right, #F3F9A7, #CAC531);
-}
-
-.Wordpress {
-    width: 90%;
-    background: #21759b;
-    background: -webkit-linear-gradient(to right, #2fb1ed, #21759b);
-    background: linear-gradient(to right, #2fb1ed, #21759b);
-}
-
-.XD {
-    width: 90%;
-    background: #ff2bc2;
-    background: -webkit-linear-gradient(to right, #f87bd5, #ff2bc2);
-    background: linear-gradient(to right, #f87bd5, #ff2bc2);
-}
-
-.AfterEffects {
-    width: 85%;
-    background: #D8A1E0;
-    background: -webkit-linear-gradient(to right, #f9cfff, #D8A1E0);
-    background: linear-gradient(to right, #f9cfff, #D8A1E0);
-}
-
-.Illustrator {
-    width: 90%;
-    background: #FF7F27;
-    background: -webkit-linear-gradient(to right, #ffa66b, #FF7F27);
-    background: linear-gradient(to right, #ffa66b, #FF7F27);
-}
-
-.Premiere {
+    grid-template-columns: 80% 20%;
     width: 95%;
-    background: #E579FF;
-    background: -webkit-linear-gradient(to right, #f1b8ff, #E579FF);
-    background: linear-gradient(to right, #f1b8ff, #E579FF)
+    border-bottom: 1px white solid;
+}
+.porto-title {
+	text-align: right;
+}
+.namehero {
+	font-size: 75px;
+    text-align: left;
+}
+/*content below my name text align*/
+body > div.content > div.bottom-hero-content > p:nth-child(1) {
+    text-align: left;
+}
+.porto-title {
+	padding-top: 40px;
+    font-size: 40px;
+}
+.bottom-hero-content {
+	display: grid;
+    grid-template-columns: 34% 11% 25%;
+    grid-gap: 15%;
+    width: 95%;
+	border-bottom: 1px solid white;
+	padding: 1em 0;
+}
+.third-text-box {
+	text-align: right;
+}
+.sub-projects-grid {
+	display: grid;
+    grid-template-columns: 10% 10% 10%;
+    grid-gap: 5%;
+}
+.sub-projects-wrapper h4 {
+	margin-bottom: 1em;
+}
+.sub-projects-wrapper ul {
+	list-style: none;
+}
+.projects-container {
+	width: 95%;
+	margin: 0 auto;
+}
+.projects-title h1{
+font-size: 80px;
+margin: 0em 0em 0.5em 0em;
+}
+.project-bar {
+	display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 30px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    padding: 0.15em 0;
 }
 
-.FourD {
-    width: 60%;
-    background: #2d39a1;
-    background: -webkit-linear-gradient(to right, #6472eb, #2d39a1);
-    background: linear-gradient(to right, #6472eb, #2d39a1)
+.main-projects a {
+	text-decoration: none;
+    color: black;
+	z-index: 20;
+	position: relative;
+}
+.twoer {
+	text-align: right;
+}
+.main-projects h3 {
+	margin: 3em 0;
 }
 
-.React {
-    width: 40%;
-    background: #61dafb;
-    background: -webkit-linear-gradient(to right, #b9f0ff, #61dafb);
-    background: linear-gradient(to right, #b9f0ff, #61dafb);
-}
+/*parallax CSS*/
 
-.Processing {
-    width: 50%;
-    background: #052642;
-    background: -webkit-linear-gradient(to right, #105796 , #052642);
-    background: linear-gradient(to right, #105796 , #052642);
-}
-
-#AfterEffects-BAR > div > div.skillbar-skill > div > svg > path:nth-child(2), #Premiere-BAR > div > div.skillbar-skill > div > svg > path:nth-child(2), #Illustrator-BAR > div > div.skillbar-skill > div > svg > path:nth-child(2) {
-    display: none;
-}
-
-@media only screen and (max-width: 10000px) {
-    .Mobile-Video {
-      display: none;
-    }
-}
-
-@media only screen and (max-width: 1477px) {
-    .skillbar-content {
-        margin-bottom: 1em;
-    }
-}
-
-@media only screen and (max-width: 1258px) {
-    .Hero-grid {
-        top: -36rem;
-    }
-}
-
-@media only screen and (max-width: 1212px) {
-    .worky-content {
-        padding: 2em 2em 0em 2em;
-    }
-}
-
-@media only screen and (max-width: 1152px) {
-    .worky-content h2 {
-        font-size: 35px;
-    }
-}
-
-@media only screen and (max-width: 1108px) {
-    .Hero-Content h1 {
-        font-size: 60px;
-    }
-
-    .Hero-Content span {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-.Hero-grid {
-    top: -33rem;
-    }
-}
-
-@media only screen and (max-width: 1027px) {
-    .skill-container {
-        grid-template-columns: 100%;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .Hero-Content {
-        top: 40%;
-        right: 0%;
-    }
-}
-
-@media only screen and (max-width: 971px) {
-    .worky-content h2 {
-        font-size: 30px;
-    }
-}
-
-@media only screen and (max-width: 944px) {
-    .Hero-Content {
-        top: 75%;
-        right: 10%;
-    }
-}
-
-@media only screen and (max-width: 850px) {
-    .worky-content h2 {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width: 821px) {
-    .Hero-Content {
-        right: 7%;
-    }
-}
-
-@media only screen and (max-width: 798px) {
-    .wrapper {
-        width: 300px;
-        height: 200px;
-    }
-    .wrapper canvas {
-        width: 100%;
-        height: 90%;
-    }
-    .Hero-Img {
-        position: relative;
-        right: -6em;
-        top: 11em;
-        z-index: 1;
-    }
-    .Hero-Content {
-        right: 4%;
-    }
-    .Hero-Content {
-        position: relative;
-        z-index: 2;
-        top: 190%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .worky-content {
-        padding: 2em 2em 0em 2em;
-    }
-    .worky-content h2 {
-        font-size: 24px;
-    }
-    .work-link a {
-        padding: 0.5em;
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 758px) {
-    .righty, .lefty {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 69% 31%;
-    }
-    .worky-content {
-        grid-row-start: 2;
-    }
-    .righty img, .lefty img {
-        grid-row-start: 1;
-    }
-    .worky-content {
-        padding: 0em 2em 2em 2em;
-    }
-    .worky-content {
-        display: grid;
-        grid-template-rows: 60px 170px 60px;
-    }
-    .worky-content p {
-        font-size: 21px;
-    }
-    .skillbar-content {
-        margin-bottom: 15px;
-    }
-}
-
-@media only screen and (max-width: 702px) {
-    .Hero-Content h1 {
-        font-size: 50px;
-    }
-    .Hero-Content span {
-        font-size: 23px;
-    }
-}
-
-@media only screen and (max-width: 646px) {
-    .Hero-Img {
-        right: -7em;
-        top: 14em;
-    }
-    .Hero-Content {
-        top: 270%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .wrapper {
-        width: 300px;
-        height: 200px;
-    }
-    body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
-        width: 80% !important;
-        height: 70% !important;
-    }
-    .Hero-Img {
-        right: -8em;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .Hero-Content {
-        top: 280%;
-        right: 0%;
-    }
-}
-
-@media only screen and (max-width: 556px) {
-    .Hero-Content {
-        top: 310%;
-    }
-    .Hero-Img {
-        right: -8em;
-        top: 18em;
-    }
-}
-
-@media only screen and (max-width: 538px) {
-    .Hero-Content {
-        top: 360%;
-    }
-    .Hero-Content h1 {
-        font-size: 40px;
-    }
-    .Hero-Img {
-        right: -3em;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    h1 {
-        font-size: 50px;
-    }
-    .Desktop-Video {
-      display: none;
-    }
-
-    .Mobile-Video {
-      display: block;
-    }
-
-    .Hero-grid {
-        top: -57rem;
-    }
-
-    .Hero-Content {
-        right: 0%;
-        width: 90%;
-    }
-
-    .Hero-Content span{
-        font-size: 22px;
-    }
-
-    .righty, .lefty {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-    }
-
-    body > div.Hero-Container > div.Hero-grid > div.Hero-Img > div > canvas {
-        width: 300px !important;
-        height: 270px !important;
-    }
-}
-
-@media only screen and (max-width: 470px) {
-    .Hero-Img {
-        right: 2em;
-    }
-}
+.stretch {
+    background: #f1f1f1;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: cover;
+    margin-top: 800px;
+  }
+  
+  .hero-wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -9999;
+    background: #000;
+  }

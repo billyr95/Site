@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Timeline</title>
+</head>
+<body>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.TL-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #111;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.right-img {
+    position: absolute;
+    right: -360px;
+    top: 30px;
+}
+.left-img {
+    position: absolute;
+    left: -360px;
+    top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+@media only screen and (max-width: 10000px) {
+    .mobile-img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .left-img, .right-img {
+      display: none;
+  }
+    .mobile-img {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .mobile-img img {
+        height: auto;
+        width: 100%;
+    }
+}
+    </style>
+    <div class="TL-container">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content">
+                        <div class="mobile-img">
+                            <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                        </div>
+                        <h2 class="steps">Step 1</h2>
+                        <h1>Heading 1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis quisquam omnis assumenda incidunt veritatis inventore, voluptatum autem obcaecati commodi.</p>
+                    </div>
+                    <div class="timeline-img right-img">
+                        <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <div class="mobile-img">
+                            <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                        </div>
+                        <h2 class="steps">Step 2</h2>
+                        <h1>Heading 2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis quisquam omnis assumenda incidunt veritatis inventore, voluptatum autem obcaecati commodi.</p>
+                    </div>
+                    <div class="timeline-img left-img">
+                        <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <div class="mobile-img">
+                            <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                        </div>
+                        <h2 class="steps">Step 3</h2>
+                        <h1>Heading 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis quisquam omnis assumenda incidunt veritatis inventore, voluptatum autem obcaecati commodi.</p>
+                    </div>
+                    <div class="timeline-img right-img">
+                        <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content">
+                        <div class="mobile-img">
+                            <img src="images/Wyoming09.png" alt="" width="500px" height="200px">
+                        </div>
+                        <h2 class="steps">Step 4</h2>
+                        <h1>Heading 4</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis quisquam omnis assumenda incidunt veritatis inventore, voluptatum autem obcaecati commodi.</p>
+                    </div>
+                    <div class="timeline-img left-img">
+                        <img src="images/Wyoming09.png" alt="" width="200px" height="200px">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

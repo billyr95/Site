@@ -1,0 +1,80 @@
+/*master CSS*/
+
+.colory {
+    color: #1f1f1f;
+}
+
+.inner-box {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-image: url('images/Wyoming09.png');
+    background-size: cover;
+}
+
+.Web-buttons a {
+    background: #1f1f1f;
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+}
+
+/*main CSS*/
+
+.video-wrapper {
+    width: 85%;
+    margin: 5% auto;
+    color: #f1f1f1;
+}
+
+.video-container {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-rows: 50% 1fr 50%;
+    grid-template-columns: 60% 1fr 0%;
+    grid-gap: 1% 1%;
+}
+
+/*Box Controls*/
+
+.home-box {
+    display: grid;
+    grid-template-rows: 240px 160px;
+    background-size: contain;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(255, 255, 255, 0.73)), url('images/Wyoming09.png');
+    width: 100%;
+}
+
+.Rewards-box {
+    display: grid;
+    grid-template-rows: 660px 160px;
+    background-size: contain;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(255, 255, 255, 0.73)), url('images/Wyoming09.png');
+    width: 100%;
+}
+
+.ISI-Home-Content {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 0px 20px;
+    grid-row-start: 2;
+}
+
+.Rewards-Mall {
+    background: blue;
+    grid-area: 1 / 2 / 3 / 2;
+}
+
+.Pipeline {
+    background: red;
+    grid-area: 2 / 1 / 2 / 2;
+}
