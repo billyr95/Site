@@ -92,3 +92,24 @@ ul {
 .inner-info-grid, .lower-skill-grid {
     border-top: 1px black solid;
 }
+
+@media only screen and (max-width: 1560px) {
+    .info-block {
+        width: 420px;
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .left-container {
+        display: none;
+    }
+    .main-container {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+    }
+    .info-block {
+            position: unset;
+            width: 100%;
+    }
+  }
