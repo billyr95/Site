@@ -146,3 +146,7 @@ margin: 0em 0em 0.5em 0em;
   .heading-title {
       font-weight: 900;
   }
+
+  .contact-container {
+      margin: 4em 0;
+  }

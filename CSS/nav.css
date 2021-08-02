@@ -1,0 +1,43 @@
+.nav-main {
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    width: 100%;
+}
+
+.nav-container {
+    background: black;
+}
+
+.nav-inner {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+}
+
+.logo h2{
+    color: white;
+    text-decoration: none;
+}
+
+.logo h2>a{
+    color: white;
+    text-decoration: none;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
