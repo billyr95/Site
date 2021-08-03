@@ -220,12 +220,30 @@ margin: 0em 0em 0.5em 0em;
     .project-bar span {
       font-size: 25px;
     }
+    .main-projects h3 {
+      margin: 0.5em 0 0.5em 0;
+    }
   }
 
   @media only screen and (max-width: 1152px) {
     .bottom-hero-content {
       grid-template-columns: 33% 17% 24%;
       grid-gap: 13%;
+    }
+    .contact-container {
+      margin-top: 2em;
+    }
+    .contact-inner {
+      grid-template-columns: 40% 60%;
+    }
+    .icon-title {
+      grid-template-columns: 25% 75%;
+    }
+  }
+
+  @media only screen and (max-width: 1050px) {
+     .contact-grid{
+      display: block;
     }
   }
 
@@ -234,16 +252,19 @@ margin: 0em 0em 0.5em 0em;
       grid-template-columns: 33% 19% 24%;
       grid-gap: 12%;
     }
+    .project-bar {
+      grid-template-columns: 60% 40%;
+    }
   }
-  @media only screen and (max-width: 924px) {
-  .heading-title {
-    font-size: 40px;
-  }
-}
-
 @media only screen and (max-width: 994px) {
   .sub-projects-grid {
     grid-template-columns: 15% 15% 20%;
+  }
+}
+
+@media only screen and (max-width: 924px) {
+  .heading-title {
+    font-size: 40px;
   }
 }
 
@@ -263,6 +284,24 @@ margin: 0em 0em 0.5em 0em;
   @media only screen and (max-width: 861px) {
     .sub-projects-grid {
       grid-template-columns: 20% 15% 33%;
+    }
+  }
+
+  @media only screen and (max-width: 848px) {
+    .project-bar {
+      grid-template-columns: 65% 35%;
+    }
+    .project-bar span {
+      font-size: 22px;
+    }
+  }
+
+  @media only screen and (max-width: 757px) {
+    .twoer {
+      display: none;
+    }
+    .project-bar {
+      display: block;
     }
   }
 
