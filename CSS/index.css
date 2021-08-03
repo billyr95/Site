@@ -176,6 +176,12 @@ margin: 0em 0em 0.5em 0em;
 
   .text-right {
       text-align: right;
+      position: relative;
+      z-index: 1000;
+  }
+
+  .dwnld-link {
+    color: black;
   }
 
  
