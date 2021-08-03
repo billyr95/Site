@@ -216,6 +216,12 @@ margin: 0em 0em 0.5em 0em;
     }
   }
 
+  @media only screen and (max-width: 1221px) {
+    .project-bar span {
+      font-size: 25px;
+    }
+  }
+
   @media only screen and (max-width: 1152px) {
     .bottom-hero-content {
       grid-template-columns: 33% 17% 24%;
@@ -288,6 +294,12 @@ display: block;
 }
 
 @media only screen and (max-width: 476px) {
+  .sub-projects-grid {
+    grid-gap: 3%;
+  }
+}
+
+@media only screen and (max-width: 436px) {
   .sub-projects-grid {
     grid-gap: 3%;
   }
