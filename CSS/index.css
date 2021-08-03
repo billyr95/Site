@@ -184,4 +184,17 @@ margin: 0em 0em 0.5em 0em;
     color: black;
   }
 
+
+  @media only screen and (max-width: 1571px) {
+    .bottom-hero-content {
+      grid-template-columns: 33% 13% 24%;
+    }
+  }
+
+  @media only screen and (max-width: 1351px) {
+    .bottom-hero-content {
+      grid-template-columns: 70% 30%;
+    }
+  }
+
  
