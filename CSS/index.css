@@ -248,7 +248,7 @@ display: block;
     display: block;
   }
 }
-@media only screen and (max-width: 731px) {
+@media only screen and (max-width: 412px) {
 .heading-title {
   font-size: 30px;
 }
