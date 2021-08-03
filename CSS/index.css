@@ -192,7 +192,7 @@ margin: 0em 0em 0.5em 0em;
   }
 
   @media only screen and (max-width: 1351px) {
-    .bottom-hero-content {
+    .topgrid {
       grid-template-columns: 70% 30%;
     }
   }
