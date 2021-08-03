@@ -338,6 +338,12 @@ display: block;
   }
 }
 
+@media only screen and (max-width: 447px) {
+  .project-bar span {
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 436px) {
   .sub-projects-grid {
     grid-gap: 3%;
