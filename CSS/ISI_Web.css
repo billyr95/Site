@@ -110,6 +110,17 @@ ul {
     margin-bottom: 1.5em;
 }
 
+.book-link {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 20;
+    font-weight: 900;
+}
+
+.book-link:hover {
+    text-decoration: underline;
+}
 
 @media only screen and (max-width: 1560px) {
     .info-block {
