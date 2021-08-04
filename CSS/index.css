@@ -184,6 +184,9 @@ margin: 0em 0em 0.5em 0em;
     color: black;
   }
 
+  .exp {
+    display: none;
+  }
 
   @media only screen and (max-width: 1571px) {
     .bottom-hero-content {
