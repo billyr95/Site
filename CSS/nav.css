@@ -42,6 +42,10 @@
     text-decoration: none;
 }
 
+.links a:hover {
+    color: #4e8cca;
+}
+
 @media only screen and (max-width: 550px) {
     .nav-inner {
         grid-template-columns: 70% 30%;
