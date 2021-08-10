@@ -116,6 +116,10 @@ ul {
     position: relative;
     z-index: 20;
     font-weight: 900;
+    text-align: center;
+    margin: 2em auto;
+    display: block;
+    font-size: 2em;
 }
 
 .book-link:hover {
