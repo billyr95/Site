@@ -122,9 +122,22 @@ ul {
     font-size: 2em;
 }
 .right-link {
-    margin: 1em 0 !important;
+    margin: 0 !important;
     font-size: 1em !important;
+    text-decoration: none;
+    color: black;
+    text-align: left;
 }
+.book-btn {
+    background: #4e8cca;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 12%), 0 4px 4px rgb(0 0 0 / 12%), 0 8px 8px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 12%);
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
 .book-link:hover {
     text-decoration: underline;
 }
