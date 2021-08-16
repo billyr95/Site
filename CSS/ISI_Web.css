@@ -121,7 +121,10 @@ ul {
     display: block;
     font-size: 2em;
 }
-
+.right-link {
+    margin: 1em 0 !important;
+    font-size: 1em !important;
+}
 .book-link:hover {
     text-decoration: underline;
 }
