@@ -1,3 +1,7 @@
+* {
+    font-family: poppins;
+    box-sizing: border-box;
+}
 .nav-main {
     position: fixed;
     z-index: 20000;

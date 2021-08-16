@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background: black;
+}
+.video-container  {
+    margin-top: 8%;
+    text-align: center;
+    width: 80%;
+    margin: 60px auto 0 auto;
+    color: #f1f1f1;
+}
+.processing-container {
+    display: grid;
+grid-template-columns: 45% 55%;
+align-items: center;
+justify-content: center;
+justify-items: center;
+align-content: center;
+width: 90%;
+margin: 60px auto;
+}
+.processing-title h1, .processing-title h4 {
+color: #f1f1f1;
+}

@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src="js/processing.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/nav.css"/>
+    <link rel="stylesheet" href="CSS/experiments.css">
 </head>
 <body>
-    <style>
-        body {
-            background: #1f1f1f;
-        }
-        .processing-container {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-}
-.processing-title h1, .processing-title h4 {
-    color: #f1f1f1;
-}
-    </style>
+        <nav class="nav-main">
+            <div class="nav-container">
+              <div class="nav-inner">
+                <div class="logo">
+                  <h2><a href="index.html">BILLY RILEY</a></h2>
+                </div>
+                <div class="links">
+                  <a href="index.html">home</a>
+                  <a href="index.html#work">work</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     <div class="processing-container">
         <div class="processing-title">
-            <h1>Windowlicker</h1>
-            <h4>Made entirely with code by using processing.</h4>
+            <h1>Processing Experiment</h1>
+            <h4>Made entirely with code by using processing.  This code takes an image and reads it's brightness values to produce a dot image of any image it reads. Drag your mouse from the upper left hand corner to the bottom right.</h4>
         </div>
         <div class="processing-art">
             <canvas data-processing-sources="WindowLicker.pde"></canvas>

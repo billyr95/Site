@@ -190,14 +190,17 @@ margin: 0em 0em 0.5em 0em;
   .dwnld-link {
     color: #1f1f1f;
   }
-
-  .exp {
-    display: none;
-  }
   
   .project-bar:hover {
     color: #f1f1f1;
     background: #4e8cca;
+  }
+
+  .exp h3 {
+    margin: 1em 0 0 0;
+  }
+  .exp p {
+    margin: 0 0 3em 0;
   }
 
   @media only screen and (max-width: 1571px) {
@@ -332,6 +335,9 @@ display: block;
   }
   .topgrid {
     display: block;
+  }
+  .aphex {
+    display: none;
   }
 }
 
